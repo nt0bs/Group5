@@ -145,7 +145,7 @@ button:hover {
   align-items: center; /* Center content horizontally */
   color: rgb(241, 139, 139); /* Text color */
   text-align: center; /* Center text */
-  background-image: url("./assets/work.gif"); /* Update this path */
+  background-image: url("./work.gif"); /* Update this path */
   background-size: cover; /* Cover the entire container */
   background-position: center; /* Center the background image */
 }
