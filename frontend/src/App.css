@@ -1,22 +1,159 @@
-/* App.css */
+/* src/App.css */
+
 .App {
   text-align: center;
-  margin: 20px;
+  padding: 20px;
+}
+
+.navigate-button {
+  padding: 10px 20px;
+  color: white;
+  background-color: #007bff; /* Bootstrap primary color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bordered-table {
+  width: 100%;
+  margin: 5px auto;
+  border-collapse: collapse; /* Collapses the borders into a single border */
+}
+
+.bordered-table th,
+.bordered-table td {
+  padding: 10px;
+  border: 1px solid #ccc; /* Add a light gray border */
+  text-align: left; /* Align text to the left */
+}
+
+.bordered-table th {
+  background-color: #f4f4f4; /* Light gray background for header */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  gap: 15px; /* Space between fields */
+  max-width: 400px; /* Set a maximum width */
+  margin: 0 auto; /* Center the form */
+  padding: 20px; /* Optional: add padding */
+  border: 1px solid #ccc; /* Optional: add a border */
+  border-radius: 5px; /* Optional: add rounded corners */
+  background-color: #f9f9f9; /* Optional: add a background color */
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column; /* Align label and input vertically */
+}
+
+input,
+textarea {
+  padding: 10px; /* Add some padding to inputs */
+  font-size: 14px; /* Adjust font size */
+  border: 1px solid #ccc; /* Optional: add a border */
+  border-radius: 3px; /* Optional: add rounded corners */
+}
+
+button {
+  padding: 10px; /* Add padding to button */
+  font-size: 16px; /* Adjust font size */
+  background-color: #007bff; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* Remove default border */
+  border-radius: 3px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker button color on hover */
+}
+
+/* src/components/JobList.css */
+
+.job-list-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.job-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px; /* Space between cards */
+  padding-top: 10px;
+}
+
+.job-card {
+  background-color: #fff; /* Card background */
+  border: 1px solid #ddd; /* Card border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 15px; /* Internal padding */
+  transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.job-card:hover {
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.job-title {
+  margin: 0 0 10px; /* Margin for title */
+  font-size: 1.5em; /* Title font size */
+}
+
+.job-company,
+.job-location,
+.job-description {
+  margin: 5px 0; /* Margin for other details */
+  color: #555; /* Text color */
+}
+
+.job-description {
+  color: #333; /* Description color */
+}
+
+/* src/components/JobDetail.css */
+
+.job-detail-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-detail-container h2 {
+  margin-bottom: 10px;
+}
+
+.job-detail-container p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* src/components/Home.css */
+
+.home-container {
+  height: 100vh; /* Full height */
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+  align-items: center; /* Center content horizontally */
+  color: rgb(241, 139, 139); /* Text color */
+  text-align: center; /* Center text */
+  background-image: url("./assets/work.gif"); /* Update this path */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
 }
 
 h1 {
-  color: #333;
+  font-size: 3em;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin: 10px 0;
-  padding: 10px;
-  background-color: #f9f9f9;
+p {
+  font-size: 1.5em;
 }
