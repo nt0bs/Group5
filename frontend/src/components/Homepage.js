@@ -1,20 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-const Homepage = () => {
+const Homepage = ({ jobs }) => {
   return (
-    <div>
+    <div className="home-container">
       <h1>Welcome to our Job Listing Platform</h1>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/add-job">Add New Job</Link>
-          </li>
-          <li>
-            <Link to="/jobs">View Job Listings</Link>
-          </li>
-        </ul>
-      </nav>
+      <p>Find your dream job today</p>
     </div>
   );
 };
