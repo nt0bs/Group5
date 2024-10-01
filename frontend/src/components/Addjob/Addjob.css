@@ -1,0 +1,57 @@
+.AddJob {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .AddJob input,
+  .AddJob select,
+  .AddJob button {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .AddJob input:focus,
+  .AddJob select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  }
+  
+  .AddJob {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .AddJob button:hover {
+    background-color: #0056b3;
+  }
+  
+  .AddJob label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .AddJob h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  @media (max-width: 600px) {
+    .AddJob {
+      padding: 15px;
+    }
+  }
