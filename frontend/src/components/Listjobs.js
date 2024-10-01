@@ -1,28 +1,45 @@
-import React, { useState } from 'react'; 
+import React from "react";
+import { useNavigate, Link } from "react-router-dom";
+import "../App.css";
 
-function Listjobs() {
-    
-    const [jobs, setJobs] = useState([
-        { id: 1, title: "Software Engineer", description: "Develop and maintain applications", location: "Remote", category: "Engineering" },
-        { id: 2, title: "Product Manager", description: "Manage product development", location: "New York", category: "Management" }
-        
-    ]);
+export const ListJobs = ({ jobs }) => {
+  const navigate = useNavigate();
 
-    return (
-        <div>
-            <h1>Job Listings</h1>
-            <ul>
-                {jobs.map(job => (
-                    <li key={job.id}>
-                        <h2>{job.title}</h2>
-                        <p>{job.description}</p>
-                        <p>{job.location}</p>
-                        <p>{job.category}</p>
-                    </li>
-                ))}
-            </ul>
-        </div>
-    );
-}
+  const handleClick = () => {
+    navigate("/add-job");
+  };
 
-export default Listjobs;
+  return (
+    <div className="job-list-container">
+      <h2>Job Listings</h2>
+      <div>
+        <button
+          onClick={handleClick}
+          className="navigate-button"
+        >
+          Add New Job
+        </button>
+      </div>
+      <div className="job-list">
+        {jobs.length === 0 && <p>Job listing is empty</p>}
+        {jobs.length > 0 &&
+          jobs.map((job) => (
+            <div
+              key={job.id}
+              className="job-card"
+            >
+              <h3 className="job-title">
+                <Link to={`/jobs/${job.id}`}>{job.title}</Link>
+              </h3>
+              <p className="job-company">
+                <strong>Category:</strong> {job.category}
+              </p>
+              <p className="job-location">
+                <strong>Location:</strong> {job.location}
+              </p>
+            </div>
+          ))}
+      </div>
+    </div>
+  );
+};
