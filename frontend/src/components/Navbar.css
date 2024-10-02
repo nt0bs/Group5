@@ -1,0 +1,45 @@
+/* src/components/Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333; /* Navbar background color */
+  color: white; /* Text color */
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.navbar-logo {
+  height: 40px; /* Adjust logo height */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.navbar-links {
+  list-style: none; /* Remove default list styles */
+  display: flex; /* Flexbox for horizontal alignment */
+}
+
+.navbar-links li {
+  margin: 0 15px; /* Space between links */
+}
+
+.navbar-links a {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.navbar-links a:hover {
+  color: #f39c12; /* Change color on hover */
+}
