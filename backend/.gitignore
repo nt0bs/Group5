@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+        get-pip.py
+        venv/Include/
+        venv/Lib/site-packages/SQLAlchemy-2.0.35.dist-info/
+        venv/Lib/site-packages/__pycache__/
+        venv/Lib/site-packages/flask_sqlalchemy-3.1.1.dist-info/
+        venv/Lib/site-packages/flask_sqlalchemy/
+        venv/Lib/site-packages/greenlet-3.1.1.dist-info/
+        venv/Lib/site-packages/greenlet/
+        venv/Lib/site-packages/sqlalchemy/
+        venv/Lib/site-packages/typing_extensions-4.12.2.dist-info/
+        venv/Lib/site-packages/typing_extensions.py
