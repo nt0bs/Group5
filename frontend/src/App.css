@@ -44,17 +44,22 @@
 }
 
 .form-field {
-  display: flex;
+  display:flex;
   flex-direction: column; /* Align label and input vertically */
+
 }
 
 input,
 textarea {
-  padding: 10px; /* Add some padding to inputs */
-  font-size: 14px; /* Adjust font size */
-  border: 1px solid #ccc; /* Optional: add a border */
-  border-radius: 3px; /* Optional: add rounded corners */
+  padding: 5px; /* Increase padding for more space inside the fields */
+  font-size: 16px; /* Increase font size for better readability */
+  border: 1px solid #ccc; /* Maintain a light gray border */
+  border-radius: 3px; /* Keep rounded corners */
+  width: 100%; /* Ensure they take full width of the container */
+  min-height: 30px; /* Set a minimum height for input fields */
 }
+
+
 
 button {
   padding: 10px; /* Add padding to button */

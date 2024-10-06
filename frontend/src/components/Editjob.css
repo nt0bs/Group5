@@ -1,0 +1,37 @@
+
+/* Edit Button Styling */
+.edit-button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Space between buttons */
+  }
+  
+  .edit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Delete Button Styling */
+  .delete-button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #dc3545; /* Bootstrap danger color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }
+  
+  /* Button Group to align buttons horizontally */
+  .button-group {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 20px;
+  }

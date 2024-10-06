@@ -3,6 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import "../App.css";
 
 export const ListJobs = ({ jobs }) => {
+  
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -37,6 +38,9 @@ export const ListJobs = ({ jobs }) => {
               <p className="job-location">
                 <strong>Location:</strong> {job.location}
               </p>
+              <Link to={`/edit-job/${job.id}`} className="edit-link">
+                Edit Job Listing
+              </Link>
             </div>
           ))}
       </div>
