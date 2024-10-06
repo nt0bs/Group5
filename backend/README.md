@@ -16,7 +16,7 @@
 ### Step 3: Install flask and SQL Alchemy
 
 ```
-    pip install flask sqlalchemy
+    pip install flask sqlalchemy flask-cors
 ```
 
 ### Step 4: Create an app.py file where your code will live
