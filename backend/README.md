@@ -77,7 +77,7 @@
 ```
 
 ### Step 5: Running the App
-
+1. Navigate to backend folder or ```cd backend``` and then run the following:
 ```
     python app.py
 ```
