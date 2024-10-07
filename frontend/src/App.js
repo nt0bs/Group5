@@ -16,7 +16,7 @@ const App = () => {
     // Fetch jobs from the backend when the component mounts
     const fetchJobs = async () => {
       try {
-        const response = await axios.get('http://127.0.0.1:5000/api/jobs');
+        const response = await axios.get('https://group5-1wvm.onrender.com/api/jobs');
         setJobs(response.data);
       } catch (error) {
         console.error("An error occurred while fetching jobs: ", error);
@@ -29,7 +29,7 @@ const App = () => {
   const addJob = async (job) => {
     try {
       // Send a POST request to the backend to add the job
-      const response = await axios.post('http://127.0.0.1:5000/api/jobs', job);
+      const response = await axios.post('https://group5-1wvm.onrender.com/api/jobs', job);
       // Update the jobs state with the newly added job
       setJobs([...jobs, response.data]); // Assuming the response contains the created job with an ID
     } catch (error) {

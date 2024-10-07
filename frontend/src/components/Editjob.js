@@ -13,7 +13,7 @@ const EditJob = () => {
   useEffect(() => {
     const fetchJob = async () => {
       try {
-        const response = await axios.get(`http://127.0.0.1:5000/api/jobs/${id}`);
+        const response = await axios.get(`https://group5-1wvm.onrender.com/api/jobs/${id}`);
         setJob(response.data);
       } catch (error) {
         console.error("An error occurred while fetching the job:", error);
@@ -32,7 +32,7 @@ const handleChange = (e) => {
  // Handle deletion of the job
  const handleDelete = async () => {
   try {
-    await axios.delete(`http://127.0.0.1:5000/api/jobs/${id}`);
+    await axios.delete(`https://group5-1wvm.onrender.com/api/jobs/${id}`);
     setJob(prevJobs => prevJobs.filter(job => job.id !== id));
     navigate('/list-jobs'); // Navigate back to the job list
   } catch (error) {
@@ -44,7 +44,7 @@ const handleChange = (e) => {
   const handleUpdate = async (e) => {
     e.preventDefault(); // Prevent default form submission
     try {
-      await axios.put(`http://127.0.0.1:5000/api/jobs/${id}`, job); // Send PUT request to update job
+      await axios.put(`https://group5-1wvm.onrender.com/api/jobs/${id}`, job); // Send PUT request to update job
       // Optionally, update the job in the list if necessary
       setJob((prevJobs) => prevJobs.map((j) => (j.id === parseInt(id) ? job : j))); // Update the job in the state
       navigate('/list-jobs'); // Redirect after update
