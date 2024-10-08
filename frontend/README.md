@@ -68,3 +68,71 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Frontend 'README.md'
+
+```markdown
+# Job Listing App Frontend
+
+This is the frontend for the Job Listing Application, built using React. It interacts with the Flask backend API to display, add, update, and delete job listings.
+
+# Contributors
+
+Cynthia Mokasi - Frontend , Home page, and UI/UX, basic styling
+Modisa Ntobeng - React set-up, Source Control (Git) and project structure and maintainance, Add job page
+Khanyisile Buthelezi - Addjob page
+Primrose Dube - Navbar page
+Lethukuthula Mkhonto - Job Listing and Styling Page
+
+## Features
+
+- Responsive design for managing job listings.
+- Axios for making API requests to the backend.
+- React Router for navigation between pages.
+- Dynamic form validation for adding and editing jobs.
+
+## Requirements
+
+Make sure you have the following installed:
+
+- Node.js (v14 or above)
+- npm (Node package manager)
+
+## Getting Started
+
+### 1. Clone the Repository
+If you have cloned the Group5 repository, the frontend folder is part of the repository just call it in your terminal:
+```bash
+cd Group5/frontend
+```
+If you have not cloned the Group5 repository, use commard below:
+
+```bash
+git clone https://github.com/nt0bs/Group5.git
+```
+then access the frontend using: 
+
+```bash
+cd Group5/frontend
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure API URL
+```javascript
+const response = await axios.get('https://group5-1wvm.onrender.com/api/jobs');
+```
+
+### 4. Run the Frontend
+
+```bash
+npm start
+```
+
+#### 1. Key Notes:
+- *** One Repo:** The backend and the frontend are in their repective folders, each with their `README.md` describing  the relevant setup and instructions for the frontend or backend.
+- **API URLs:** For the frontend, the API URLs  point to the correct deployed backend URL.
